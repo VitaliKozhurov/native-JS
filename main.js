@@ -45,24 +45,24 @@
 
 // Копирование объектов
 const students = [
-    {name:'Bob', age:34},
-    {name:'Alex', age:32},
+    { name: 'Bob', age: 34 },
+    { name: 'Alex', age: 32 },
 ]
 
 // CRUD create, read, update, delete
 //add student ('Create')
 const newSt = {
-    name:'John',
-    age:35
+    name: 'John',
+    age: 35
 }
 const copySt = [...students, newSt];
 
 //update Bob name to Julia
-const copy2St = copySt.map(stObj=>stObj.name==='Bob'?{...stObj, name:'Julia'}:stObj);
+const copy2St = copySt.map(stObj => stObj.name === 'Bob' ? { ...stObj, name: 'Julia' } : stObj);
 
 //delete Julia
 
-const copy3St = copy2St.filter(stObj=>stObj.name!=='Julia');
+const copy3St = copy2St.filter(stObj => stObj.name !== 'Julia');
 
-console.log(copy2St)
-console.log(copy3St)
+console.log(copy2St);
+console.log(copy3St);

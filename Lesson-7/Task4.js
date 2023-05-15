@@ -3,9 +3,7 @@
 // getMinLengthWord("") => null
 // split()
 
-const getMinLengthWord = (str) => {
-    return str === '' ? null : str.split(' ').sort((a, b) => a.length - b.length)[0];
-}
+const getMinLengthWord = (str) => str === '' ? null : str.split(' ').sort((a, b) => a.length - b.length)[0];
 
 /*
 console.log(getMinLengthWord('Всем студентам инкубатора желаю удачи!'))*/

@@ -3,20 +3,20 @@
 // repeatString("yo", 3, ",") => "yo,yo,yo"
 // for или str.repeat()
 
-const repeatString_1 = (str, n, split) => {
-    return Array(n).fill(str).join(split);
+const repeatString_1 = (str, n, splitter) => {
+    return Array(n).fill(str).join(splitter);
 }
 
-const repeatString_2 = (str, n, split) => {
+const repeatString_2 = (str, n, splitter) => {
     let result = '';
     for (let i = 0; i < n; i++) {
-        result += i < n - 1 ? str + split : str;
+        result += i < n - 1 ? str + splitter : str;
     }
     return result
 }
 
-const repeatString_3 = (str, n, split) => {
-    return (str+split).repeat(n-1)+str;
+const repeatString_3 = (str, n, splitter) => {
+    return (str+splitter).repeat(n-1)+str;
 }
 
 /*

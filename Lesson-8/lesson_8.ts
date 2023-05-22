@@ -2,7 +2,6 @@
 // числа (неопределённое кол-во) и возвращает их сумму (rest).
 
 export function sum(...nums: Array<number>): number {
-    console.log(nums);
     return nums.reduce(
         (prev, curr) => (curr % 1 === 0 && curr > 0 ? prev + curr : prev),
         0
